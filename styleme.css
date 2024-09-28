@@ -1,42 +1,58 @@
-@charset "UTF-8"; /* CSS Document */ 
+@charset "UTF-8"; 
 
-#navList
-{
-        body { 
-        margin: 0;
-    }
+header .header-text {
+    margin-top: 100px;
+    margin-bottom: 150px;
+    color: lightblue;
+}
 
-    ul {
+header .header-text h1 {
+    text-align: center;
+    text-decoration-line: underline;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header .header-text h2 {
+    color: lightblue;
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body { 
+    background-image: url('imgs/bluebackground.webp');
+    margin: 0;
+}
+
+main{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+/* Connecting div-navList in homepage to css file */
+.navbar ul {
         
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 20%;
-        background-color: #1063;
-        position: fixed;
-        height: 100%;
-        overflow: auto;
-
-    }
-
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration:none;
-
-    }
-
-    li a.active {
-        background-color: #04AA6D;
-        color: white;
-    }
-
-    li a:hover:not(.active) {
-        background-color: #1023;
-        color: white;
-    }
-
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: rgb(168, 148, 221);
+    text-align: center;
     
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+
+}
+
+.navbar a:hover {
+    background-color: #1023;
+    color: white;
 }
