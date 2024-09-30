@@ -1,19 +1,6 @@
 @charset "UTF-8"; 
 
-/* background */
-body { 
-    margin: 0;
-    background-color: rgb(128, 142, 219);
-}
-
-/* home page */
-header .header-text {
-    margin-top: 100px;
-    margin-bottom: 15px;
-    color: rgb(128, 142, 219);
-}
-
-.back-img {
+.back-img-home {
     position: absolute;
     top: 0%;
     left: 0px;
@@ -22,45 +9,54 @@ header .header-text {
     z-index: -1; /* places back my attributes (ie: lines/h1) */
 }
 
-/* affecting h1 portion of header */
-header .header-text h1 {
-    text-align: center;
-    text-decoration-line: none;
-    font-size: 35px;
-    margin-top: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-/* Connecting div-navList in homepage to css file */
+/* Connecting div-navList in htmls to css file */
 .navbar {
     position: absolute;
     top: 0%;
     width: 100%;
     left: 0;
     padding: 0;
-    display: flex; /* fit spaces within container */
     align-items: center;
     justify-content: space-between;
+    font-family: sans-serifz;
 }
 
 .navbar ul li { 
+    padding: 10px 14px;
     list-style-type: none;
     display: inline-block;
     margin-left: 100px;
 }
 
 .navbar ul li a {
-    text-decoration: none;
+    padding: 10px 14px;
     color: rgb(128, 142, 219);
     font-size: 15px;
+    text-decoration: none;
+    display: inline-block; /* keeps text in space even when hovering  */
 }
 
 .navbar a:hover {
-    background-color: rgba(27, 82, 145, 0.548);
-    color: white;
+    background-color: rgba(217, 209, 255, 0.548);
+    color: rgb(255, 255, 255);
 }
 
+/* home page */
+headerhome .home-text {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    color: rgb(128, 142, 219);
+}
+
+
+/* affecting h1 portion of header */
+headerhome .home-text h1 {
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 35px;
+    margin-top: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 /* extra details to webpage */
 /* line vert-line css conntected to html */
@@ -72,4 +68,16 @@ header .header-text h1 {
     border-right: 3px solid rgb(255, 255, 255);
     height: 400px; 
     border-radius:30px; /* create curved element on the line */
+}
+
+bodyhome { 
+    margin: 0;
+}
+
+headerabout .about-text h1{
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 35px;
+    margin-top: 90px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
