@@ -1,6 +1,17 @@
 @charset "UTF-8"; 
 
-.back-img-home {
+/* home page */
+headerhome .about-text h1{
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 35px;
+    margin-top: 90px;
+    font: serif;
+}
+
+
+/* Nav Bar page */
+.back-img-about {
     position: absolute;
     top: 0%;
     left: 0px;
@@ -41,8 +52,8 @@
     color: rgb(255, 255, 255);
 }
 
-/* home page */
-headerhome .home-text {
+/* about page */
+headerabout .about-text {
     margin-top: 100px;
     margin-bottom: 15px;
     color: rgb(128, 142, 219);
@@ -50,7 +61,7 @@ headerhome .home-text {
 
 
 /* affecting h1 portion of header */
-headerhome .home-text h1 {
+headerabout .about-text h1 {
     text-align: center;
     text-decoration-line: none;
     font-size: 35px;
@@ -120,15 +131,31 @@ section {
     padding: 0 20px; /* two parameters of padding (top/bottom & left/right) */
 }
 
-bodyhome { 
+bodyabout { 
     margin: 0; 
 }
 
-headerabout .about-text h1{
-    text-align: center;
-    text-decoration-line: none;
-    font-size: 35px;
-    margin-top: 90px;
-    font: serif;
+
+/* contact page */
+#contact {
+    max-width: 500px;
+    margin: 0;
 }
 
+.labels {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* fixing the boxes */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
