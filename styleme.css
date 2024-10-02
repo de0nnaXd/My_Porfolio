@@ -9,7 +9,7 @@
     z-index: -1; /* places back my attributes (ie: lines/h1) */
 }
 
-/* Connecting div-navList in htmls to css file */
+/* connecting div-navList in htmls to css file */
 .navbar {
     position: absolute;
     top: 0%;
@@ -18,7 +18,7 @@
     padding: 0;
     align-items: center;
     justify-content: space-between;
-    font-family: sans-serifz;
+    font: sans-serif;
 }
 
 .navbar ul li { 
@@ -55,14 +55,51 @@ headerhome .home-text h1 {
     text-decoration-line: none;
     font-size: 35px;
     margin-top: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: serif;
+}
+
+section {
+    width: 70%;
+    margin: 70px auto;
+    color: whitesmoke;
+    font: serif;
+}
+
+.section-two {
+    max-width: 1200px;
+    margin: 70px auto;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.rows {
+    display: flex; /* align columns */
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.column {
+    flex: 1; /* item grows to available space with value:1 of flex */
+    padding: 20px;
+}
+
+.column img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* removes default paragraph margin */
 }
 
 /* extra details to webpage */
 /* line vert-line css conntected to html */
+.vert-line-container {
+    display: flex;
+    align-items: center; /* vertical alignment of text */
+    justify-content: center; /* horizontal alignment */
+}
+
 .vert-line {
-    margin-right: 100px;
-    margin-left: 100px;
     border-left: 3px solid rgb(255, 255, 255);
     height: 400px;
     border-right: 3px solid rgb(255, 255, 255);
@@ -70,8 +107,21 @@ headerhome .home-text h1 {
     border-radius:30px; /* create curved element on the line */
 }
 
-bodyhome { 
+.vert-line-text {
+    text-align: center;
+    color: white;
+    font: serif;
+    font-size: 16px;
+    max-width: 200px; 
+}
+
+.vert-line-text {
     margin: 0;
+    padding: 0 20px; /* two parameters of padding (top/bottom & left/right) */
+}
+
+bodyhome { 
+    margin: 0; 
 }
 
 headerabout .about-text h1{
@@ -79,5 +129,6 @@ headerabout .about-text h1{
     text-decoration-line: none;
     font-size: 35px;
     margin-top: 90px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: serif;
 }
+

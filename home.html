@@ -2,7 +2,7 @@
 <html>
     <head> <!-- creating parameters for the nav bar {ie: where it is placed on the page and how it will appear on the page} -->
         <meta charset="UTF-8">
-        <title>Nav Bar</title>
+        <title>Rachel's Resume</title>
         <link rel="stylesheet" type="text/css" href="styleme.css">
     </head>
 
@@ -10,14 +10,21 @@
         <div class="home-text">
             <h1>Rachel Ayson</h1>
         </div>
-        <div class="vert-line"></div>
+        <div class="vert-line-container"> <!-- container element to allow text within lines created-->
+            <div class="vert-line">
+                <div class="vert-line-text">
+                    <p> intro text about myself</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </headerhome>
 
-    <body>
+    <bodyhome>
         <div class="back-img-home">
             <img src="imgs/1183596.webp" alt="Background Image">
         </div>
-        <!-- Nav Bar & Categories-->
+        <!-- Nav Bar & categories-->
         <nav class="navbar">
             <ul>
                 <li><a href="home.html">Home Page</a></li>
@@ -27,9 +34,21 @@
             </ul>
         </nav>
 
-        <main>
-
-            
-        </main>
-    </body>
+        <!-- adding section two of page(after title page) for info about myself-->
+         <section>
+            <div class="section-two">
+                <h1>info/intro</h1>
+                    <div class="rows">
+                        <div class="column">
+                            <img src="imgs/black-square-png-2.png" alt="picture of myself">
+                            <h4>pic of myself</h4>
+                </div>
+                <div class="column">
+                    <img src="imgs/black-square-png-2.png" alt="another picture">
+                    <h4>another pic of myself</h4>
+                </div> 
+            </div>
+         </section>
+        
+    </bodyhome>
 </html>
