@@ -9,8 +9,6 @@ headerhome .about-text h1{
     font: serif;
 }
 
-
-/* Nav Bar page */
 .back-img-about {
     position: absolute;
     top: 0%;
@@ -20,6 +18,8 @@ headerhome .about-text h1{
     z-index: -1; /* places back my attributes (ie: lines/h1) */
 }
 
+
+/* Nav Bar page */
 /* connecting div-navList in htmls to css file */
 .navbar {
     position: absolute;
@@ -138,41 +138,35 @@ bodyabout {
 
 /* contact page */
 #contact {
-    max-width: 500px;
-    margin: 80;
-    padding: 100px 100px;
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 90px 90px;
 }
 
 .email-insert-container {
-    width: 200px;
-    height: auto;
-    padding: 100px;
+    width: 90%;
+    max-width: 90%;
+    height: 400px;
+    padding: 10px 40px;
     border: 4px solid rgb(138, 127, 167);
-    margin: 50px;
+    margin: 5px;
     border-radius: 20px;
     background-color: rgb(181, 189, 238);
 }
 
-.labels {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 label {
     display: block;
-    margin-bottom: 0px;
 }
 
 /* fixing the boxes */
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     box-sizing: border-box;
-    border: 50px;
-    border-radius: 40px;
-    margin-bottom: 10px;
+    border: 3px solid rgb(138, 127, 167);
+    border-radius: 7px;
 }
 
 bodycontact .contact h1 {
@@ -181,4 +175,11 @@ bodycontact .contact h1 {
     font: serif;
 }
 
-
+.back-img-contact {
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* places back my attributes (ie: lines/h1) */
+}
