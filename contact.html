@@ -3,26 +3,37 @@
     <head>
         <meta charset="utf-8">
         <title>How to Contact Me</title>
-        <link rel='stylesheet' type='text/css' href='style.css'>
+        <link rel='stylesheet' type='text/css' href='styleme.css'>
     </head>
-    <body>
+    <bodycontact>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home Page</a></li>
+                <li><a href="aboutme.html">About Rachel</a></li>
+                <li><a href="projects.html">Project Page</a></li>
+                <li><a href="contact.html">How to Contact</a></li>
+            </ul>
+        </nav>
+        
         <div id="contact">
-            <h1>Contact by Email</h1>
-            <Contact-Info action="mailto: rachel.ayson@ontariotechu.net" method="post" enctype="text/plain" name="Email">
-                <div class="labels">
-                    <label for="name">Name: </label>
-                    <input type="text" id="name" name="name" size="30" placeholder="Enter Your Name Here">
-                </div>
-                <div class="labels">
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" size="30" placeholder="Enter Your Email Here">
-                </div>
+            <div class="email-insert-container">
+                <h1>Contact by Email</h1>
+                <form action="mailto: rachel.ayson@ontariotechu.net" method="post" enctype="text/plain" name="Email">
+                    <div class="labels">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" size="30" placeholder="Enter Your Name Here">
+                    </div>
+                    <div class="labels">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" size="30" placeholder="Enter Your Email Here">
+                    </div>
 
-                <div class="labels">
-                    <label for="comment">Comments: </label>
-                    <textarea id="comment" name="name" cols="20" rows="20" placeholder="Enter Any Comments Here"></textarea>
-                </div>
-            </Contact-Info>
+                    <div class="labels">
+                        <label for="comment">Comments: </label>
+                        <textarea id="comment" name="name" cols="20" rows="20" placeholder="Enter Any Comments Here"></textarea>
+                    </div>
+                </form>
+            </div>
         </div>
-    </body>
+    </bodycontact>
 </html>
