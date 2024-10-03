@@ -1,23 +1,16 @@
 @charset "UTF-8"; 
 
-/* home page */
-headerhome .about-text h1{
-    text-align: center;
-    text-decoration-line: none;
-    font-size: 35px;
-    margin-top: 90px;
+
+body { 
+    margin: 0; 
+}
+
+section {
+    width: 70%;
+    margin: 70px auto;
+    color: whitesmoke;
     font: serif;
 }
-
-.back-img-about {
-    position: absolute;
-    top: 0%;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* places back my attributes (ie: lines/h1) */
-}
-
 
 /* Nav Bar page */
 /* connecting div-navList in htmls to css file */
@@ -53,7 +46,41 @@ headerhome .about-text h1{
 }
 
 /* about page */
-headerabout .about-text {
+.back-img-about {
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* places back my attributes (ie: lines/h1) */
+}
+
+
+/* home page */
+header .home-text h1{
+    margin: 100px auto;
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 35px;
+    font: serif;
+}
+
+
+.footer {
+    margin: 0 auto;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(50, 34, 106);
+}
+
+
+
+
+
+/* about page */
+header .about-text {
     margin-top: 100px;
     margin-bottom: 15px;
     color: rgb(128, 142, 219);
@@ -61,7 +88,7 @@ headerabout .about-text {
 
 
 /* affecting h1 portion of header */
-headerabout .about-text h1 {
+header .about-text h1 {
     text-align: center;
     text-decoration-line: none;
     font-size: 35px;
@@ -69,14 +96,9 @@ headerabout .about-text h1 {
     font: serif;
 }
 
-section {
-    width: 70%;
-    margin: 70px auto;
-    color: whitesmoke;
-    font: serif;
-}
-
 .section-two {
+    width: 70%;
+    margin: 70px 20px;
     max-width: 1200px;
     margin: 70px auto;
     text-align: center;
@@ -131,9 +153,6 @@ section {
     padding: 0 20px; /* two parameters of padding (top/bottom & left/right) */
 }
 
-bodyabout { 
-    margin: 0; 
-}
 
 
 /* contact page */
@@ -154,9 +173,6 @@ bodyabout {
     background-color: rgb(181, 189, 238);
 }
 
-label {
-    display: block;
-}
 
 /* fixing the boxes */
 input[type="text"],
@@ -169,7 +185,7 @@ textarea {
     border-radius: 7px;
 }
 
-bodycontact .contact h1 {
+body .contact h1 {
     text-align: center;
     font-size: 35px;
     font: serif;
@@ -184,14 +200,14 @@ bodycontact .contact h1 {
 
 
 /* projects page */
-bodyprojects h1 {
+body .projects-text h1 {
     text-align: center;
     text-decoration-line: none;
     font-size: 35px;
     margin-top: 100px;
     margin-bottom: 10px;
     font: serif;
-    color: blue;
+    color: rgb(140, 140, 213);
 }
 
 .project-containers {
