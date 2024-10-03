@@ -2,7 +2,10 @@
 
 
 body { 
-    margin: 0; 
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -57,27 +60,69 @@ section {
 
 
 /* home page */
+header .home-text {
+    margin-top: 100px;
+    margin-bottom: 15px;
+    color: rgb(128, 142, 219);
+}
+
 header .home-text h1{
-    margin: 100px auto;
     text-align: center;
     text-decoration-line: none;
     font-size: 35px;
+    margin-top: 0;
     font: serif;
+}
+
+.back-img-home {
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+}
+
+/* extra details to webpage */
+/* line vert-line css conntected to html */
+.vert-line-container {
+    display: flex;
+    align-items: center; /* vertical alignment of text */
+    justify-content: center; /* horizontal alignment */
+    z-index: 1; /* places container in front of background */
+    flex-grow: 1; /* allows container to grow to available space */
+}
+
+.vert-line {
+    border-left: 3px solid rgb(255, 255, 255);
+    border-right: 3px solid rgb(255, 255, 255);
+    height: 400px; 
+    border-radius:30px; /* create curved element on the line */
+}
+
+.vert-line-text {
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+    font: serif;
+    font-size: 16px;
+    max-width: 200px; 
+}
+
+.vert-line-text {
+    margin: 0;
+    padding: 0 20px; /* two parameters of padding (top/bottom & left/right) */
 }
 
 
 .footer {
-    margin: 0 auto;
     padding: 5px 0px;
     text-align: center;
     width: 100%;
     height: 90px;
     background-color: rgb(50, 34, 106);
 }
-
-
-
-
 
 /* about page */
 header .about-text {
@@ -123,37 +168,6 @@ header .about-text h1 {
     display: block;
     margin: 0 auto; /* removes default paragraph margin */
 }
-
-/* extra details to webpage */
-/* line vert-line css conntected to html */
-.vert-line-container {
-    display: flex;
-    align-items: center; /* vertical alignment of text */
-    justify-content: center; /* horizontal alignment */
-}
-
-.vert-line {
-    border-left: 3px solid rgb(255, 255, 255);
-    height: 400px;
-    border-right: 3px solid rgb(255, 255, 255);
-    height: 400px; 
-    border-radius:30px; /* create curved element on the line */
-}
-
-.vert-line-text {
-    text-align: center;
-    color: white;
-    font: serif;
-    font-size: 16px;
-    max-width: 200px; 
-}
-
-.vert-line-text {
-    margin: 0;
-    padding: 0 20px; /* two parameters of padding (top/bottom & left/right) */
-}
-
-
 
 /* contact page */
 #contact {
