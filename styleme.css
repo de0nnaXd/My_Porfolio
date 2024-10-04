@@ -3,10 +3,13 @@
 
 body { 
     margin: 0;
-    height: 100%;
+    height: 100vh; /* setting height */
+    overflow: hidden; /* disable scrolling down page */
     display: flex;
     flex-direction: column;
+    padding-bottom: 90px;
 }
+
 
 section {
     width: 70%;
@@ -102,7 +105,7 @@ header .home-text h1{
 
 .vert-line-text {
     margin: 0;
-    padding: 0 20px;
+    padding: 0 20px; /* two parameters of padding (top/bottom & left/right) */
     text-align: center;
     color: white;
     font: serif;
@@ -110,18 +113,19 @@ header .home-text h1{
     max-width: 200px; 
 }
 
-.vert-line-text {
-    margin: 0;
-    padding: 0 20px; /* two parameters of padding (top/bottom & left/right) */
+.vert-line-text img{
+    width: 100px;
+    height: auto;
+    margin: 10px o;
 }
 
-
 .footer {
-    padding: 5px 0px;
+    margin-top: auto;
+    padding: 0;
     text-align: center;
     width: 100%;
-    height: 90px;
     background-color: rgb(50, 34, 106);
+    color: white;
 }
 
 /* about page */
@@ -161,7 +165,8 @@ header .about-text h1 {
     padding: 20px;
 }
 
-.column img {
+.column img,
+.column video {
     width: 100%;
     max-width: 100px;
     height: auto;
