@@ -147,7 +147,7 @@ header .about-text h1 {
     font: serif;
 }
 
-.section-two {
+section .section-two {
     width: 70%;
     margin: 70px 20px;
     max-width: 1200px;
@@ -160,6 +160,7 @@ header .about-text h1 {
     display: flex; /* align columns */
     justify-content: space-between;
     margin-top: 30px;
+    gap: 20px;
 }
 
 .column {
@@ -171,7 +172,7 @@ header .about-text h1 {
 .column video {
     width: 100%;
     max-width: 100px;
-    height: auto;
+    max-height: 100px;
     display: block;
     margin: 0 auto; /* removes default paragraph margin */
 }
