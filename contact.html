@@ -6,18 +6,18 @@
         <link rel='stylesheet' type='text/css' href='styleme.css'>
     </head>
 
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="home.html">Home Page</a></li>
-                <li><a href="aboutme.html">About Rachel</a></li>
-                <li><a href="projects.html">Project Page</a></li>
-                <li><a href="contact.html">How to Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="aboutme.html">About Rachel</a></li>
+                    <li><a href="projects.html">Project Page</a></li>
+                    <li><a href="contact.html">How to Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <div class="back-img-contact">
             <img src="imgs/contact.jpg" alt="contact">
         </div>
@@ -28,16 +28,20 @@
                 <form action="mailto: rachel.ayson@ontariotechu.net" method="post" enctype="text/plain" name="Email">
                     <div class="labels">
                         <label for="name">Name: </label>
-                        <input type="text" id="name" name="name" size="10" placeholder="Enter Your Name Here">
+                        <input type="text" id="name" name="name" size="10" placeholder="Enter Your Name Here" required>
                     </div>
                     <div class="labels">
                         <label for="email">Email: </label>
-                        <input type="email" id="email" name="email" size="10" placeholder="Enter Your Email Here">
+                        <input type="email" id="email" name="email" size="10" placeholder="Enter Your Email Here" required>
                     </div>
 
                     <div class="labels">
                         <label for="comment">Comments: </label>
                         <textarea id="comment" name="name" cols="30" rows="5" placeholder="Enter Any Comments Here"></textarea>
+                    </div>
+                    <div class="labels">
+                        <label for="tel">Phone Number: </label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required>
                     </div>
                     <p>
                         <input type="submit" value="Click to submit"/>

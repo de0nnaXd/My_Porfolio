@@ -13,7 +13,7 @@ section {
     width: 70%;
     margin: 70px auto;
     color: whitesmoke;
-    font: serif;
+    font-family: serif, Times, "Times New Roman";
 }
 
 /* Nav Bar page */
@@ -26,7 +26,7 @@ section {
     padding: 0;
     align-items: center;
     justify-content: space-between;
-    font: sans-serif;
+    font-family: serif, Times, "Times New Roman";
 }
 
 .navbar ul li { 
@@ -75,7 +75,7 @@ header .home-text h1{
     text-decoration-line: none;
     font-size: 35px;
     margin-top: 0;
-    font: serif;
+    font-family: serif, Times, "Times New Roman";
 }
 
 .back-img-home {
@@ -109,7 +109,7 @@ header .home-text h1{
     padding: 0 20px; /* two parameters of padding (top/bottom & left/right) */
     text-align: center;
     color: white;
-    font: serif;
+    font-family: serif, Times, "Times New Roman";
     font-size: 16px;
     max-width: 200px; 
 }
@@ -144,7 +144,7 @@ header .about-text h1 {
     text-decoration-line: none;
     font-size: 35px;
     margin-top: 0;
-    font: serif;
+    font-family: serif, Times, "Times New Roman";
 }
 
 section .section-two {
@@ -210,7 +210,7 @@ textarea {
 body .contact h1 {
     text-align: center;
     font-size: 35px;
-    font: serif;
+    font-family: serif, Times, "Times New Roman";
 }
 
 .back-img-contact {
@@ -228,7 +228,7 @@ body .projects-text h1 {
     font-size: 35px;
     margin-top: 100px;
     margin-bottom: 10px;
-    font: serif;
+    font-family: serif, Times, "Times New Roman";
     color: rgb(140, 140, 213);
 }
 
