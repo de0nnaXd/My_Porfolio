@@ -239,13 +239,14 @@ body .projects-text h1 {
 .project-containers {
     margin: 50px auto;
     width: 400px;
-    height: 10px;
+    height: auto;
     padding: 10px 10px;
     border: 2px solid rgb(128, 142, 219);
     border-radius: 20px;
 }
 
 .colorgrad {
+    min-height: 100vh;
     height: 100%; /* set to full viewport height */
     width: 100%;
     margin: 0;

@@ -5,8 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta tag -->
         <title>All About Rachel</title>
         <link rel="stylesheet" type="text/css" href="styleme.css" media="screen and (min-width: 769px)">
-        <link rel="stylesheet" type="text/css" href="style768.css" media="screen and (max-width: 768px)">
-        <link rel="stylesheet" type="text/css" href="style480.css" media="screen and (max-width: 480px)">
+        <link rel="stylesheet" type="text/css" href="styleres.css" media="screen and (max-width: 768px)">
     </head>
 
     <body>
@@ -48,11 +47,9 @@
                 </div>
             </div>
         </section>
-
         <script>
             document.getElementById('mobileicon').addEventListener('click', function() {
-                const navs = document.getElementById('navs');
-                navs.classList.toggle('show');
+                const navbar = document.getElementById('navbar');
             });
         </script>
     </body>
