@@ -4,12 +4,10 @@
 body { 
     margin: 0;
     height: 100vh; /* setting height */
-    overflow: hidden; /* disable scrolling down page */
     display: flex;
     flex-direction: column;
     padding-bottom: 90px;
 }
-
 
 section {
     width: 70%;
@@ -63,6 +61,9 @@ section {
 
 
 /* home page */
+.home-page {
+    overflow: hidden;
+}
 header .home-text {
     margin-top: 100px;
     margin-bottom: 15px;
@@ -121,11 +122,12 @@ header .home-text h1{
 
 .footer {
     margin-top: auto;
+    margin-bottom: 0;
     padding: 0;
     text-align: center;
     width: 100%;
-    background-color: rgb(50, 34, 106);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(159, 118, 225);
 }
 
 /* about page */
