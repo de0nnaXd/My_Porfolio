@@ -103,7 +103,7 @@ header .home-text h1{
     margin: 0;
     padding: 0 20px; /* two parameters of padding (top/bottom & left/right) */
     text-align: center;
-    color: white;
+    color: rgb(128, 142, 219);
     font-family: serif, Times, "Times New Roman";
     font-size: 16px;
     max-width: 200px; 
@@ -116,7 +116,7 @@ header .home-text h1{
 }
 
 .footer {
-    padding: 5px;
+    padding: 5px 0;
     text-align: center;
     width: 100%;
     background-color: rgb(255, 255, 255);
